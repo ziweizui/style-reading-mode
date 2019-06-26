@@ -1,0 +1,28 @@
+@-moz-document url-prefix("https://juejin.im/post/") {
+  .activity-recommend, .main-header-box, .sidebar, .recommended-area, .article-suspended-panel {
+    display: none !important;
+  }
+}
+@-moz-document url-prefix("https://blog.csdn.net/") {
+  #csdn-toolbar {
+    display: none;
+  }
+
+  #mainBox > aside {
+    display: none;
+  }
+  #mainBox main.recommend-box {
+    display: none;
+  }
+  #mainBox #article_content {
+    height: auto !important;
+  }
+  #mainBox .hide-article-box {
+    display: none;
+  }
+  #mainBox .recommend-box {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

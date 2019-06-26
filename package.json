@@ -1,0 +1,23 @@
+{
+  "name": "style-reading-mode",
+  "version": "1.0.0",
+  "description": "样式库，实现各种网站的阅读模式。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "sass --watch styles/index.scss index.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yee2/style-reading-mode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yee2/style-reading-mode/issues"
+  },
+  "homepage": "https://github.com/Yee2/style-reading-mode#readme",
+  "dependencies": {
+    "sass": "^1.22.0"
+  }
+}
