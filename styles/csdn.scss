@@ -4,10 +4,9 @@
         display: none;
     }
     #mainBox{
+        display: flex;
+        justify-content: center;
         >aside{
-            display: none;
-        }
-        main.recommend-box{
             display: none;
         }
         #article_content{
@@ -16,8 +15,19 @@
         .hide-article-box{
             display: none;
         }
-        .recommend-box{
+        >main{
+            // 底部推荐
+            > .recommend-box{
+                display: none;
+            }
+        }
+        // 右边推荐
+        > .recommend-right{
             display: none;
         }
+    }
+    //屏蔽点赞工具条
+    .tool-box{
+        display: none !important;
     }
 }

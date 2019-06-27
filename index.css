@@ -8,10 +8,11 @@
     display: none;
   }
 
-  #mainBox > aside {
-    display: none;
+  #mainBox {
+    display: flex;
+    justify-content: center;
   }
-  #mainBox main.recommend-box {
+  #mainBox > aside {
     display: none;
   }
   #mainBox #article_content {
@@ -20,7 +21,14 @@
   #mainBox .hide-article-box {
     display: none;
   }
-  #mainBox .recommend-box {
+  #mainBox > main > .recommend-box {
+    display: none;
+  }
+  #mainBox > .recommend-right {
+    display: none;
+  }
+
+  .tool-box {
     display: none;
   }
 }
