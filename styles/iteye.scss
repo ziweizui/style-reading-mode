@@ -1,0 +1,25 @@
+@import "common";
+@-moz-document regexp("https://\\w+\\.iteye\\.com/blog/.*") {
+    #csdn-toolbar,#header{
+        display: none;
+    }
+    #content{
+        @include container;
+        #local,>.blog-sidebar{
+            display: none;
+        }
+        #main{
+            @include box-block;
+        }
+        #main > div.blog_main > div.blog_comment{
+            display: none;
+        }
+    }
+    //去除阅读更多
+    #blog_content{
+        height: auto !important;
+        .hide-article-box{
+            display: none !important;
+        }
+    }
+}

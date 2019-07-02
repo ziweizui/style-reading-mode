@@ -1,0 +1,14 @@
+@mixin container {
+    display: flex;
+    justify-content: center;
+    > div {
+        display: flex;
+    }
+}
+@mixin box-block{
+    display: block;
+    width: 720px;
+    max-width: 100%;
+    float: none;
+    box-sizing: border-box;
+}
