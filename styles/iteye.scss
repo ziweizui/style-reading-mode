@@ -1,5 +1,5 @@
 @import "common";
-@-moz-document regexp("https://\\w+\\.iteye\\.com/blog/.*") {
+@-moz-document regexp("https://[\\w-]+\\.iteye\\.com/blog/.*") {
     #csdn-toolbar,#header{
         display: none;
     }

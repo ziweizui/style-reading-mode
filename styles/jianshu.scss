@@ -1,0 +1,26 @@
+@import "common";
+@-moz-document url-prefix("https://www.jianshu.com/p/") {
+    body{
+        >nav{
+            display: none;
+        }
+        .note-bottom{
+            display: none;
+        }
+
+    }
+    #note-fixed-ad-container,#web-note-ad-1{
+        display: none !important;
+    }
+    .note{
+        @include container;
+        >.post{
+            @include box-block;
+            .meta-bottom,.follow-detail{
+                display: none;
+            }
+        }
+
+    }
+
+}

@@ -1,21 +1,28 @@
+@import "common";
 @-moz-document url-prefix("https://blog.csdn.net/") {
 
+    body > aside{
+        display: none;
+    }
     #csdn-toolbar{
         display: none;
     }
     #mainBox{
-        display: flex;
-        justify-content: center;
+        @include container;
         >aside{
             display: none;
         }
         #article_content{
             height: auto !important;
+            .article-copyright{
+                display: none;
+            }
         }
         .hide-article-box{
             display: none;
         }
         >main{
+            @include box-block;
             // 底部推荐
             > .recommend-box{
                 display: none;
@@ -25,9 +32,12 @@
         > .recommend-right{
             display: none;
         }
+        .recommend-item-box,.recommend-loading-box{
+            display: none;
+        }
     }
     //屏蔽点赞工具条
-    .tool-box{
+    .tool-box,.csdn-side-toolbar{
         display: none !important;
     }
 }
