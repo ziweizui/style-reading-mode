@@ -52,7 +52,7 @@
     display: none !important;
   }
 }
-@-moz-document regexp("https://\\w+\\.iteye\\.com/blog/.*") {
+@-moz-document regexp("https://[\\w-]+\\.iteye\\.com/blog/.*") {
   #csdn-toolbar, #header {
     display: none;
   }
@@ -113,6 +113,49 @@
   }
   .note > .post .meta-bottom, .note > .post .follow-detail {
     display: none;
+  }
+}
+@-moz-document url-prefix("https://www.zhihu.com/question/") {
+  .AdblockBanner {
+    display: none;
+  }
+
+  header[role=banner] {
+    display: none;
+  }
+
+  .QuestionHeader .QuestionHeader-footer {
+    display: none;
+  }
+
+  .QuestionHeader-content .QuestionHeader-tags, .QuestionHeader-content .QuestionHeader-side {
+    display: none;
+  }
+
+  .Question-main {
+    display: flex;
+    justify-content: center;
+  }
+  .Question-main > div {
+    display: flex;
+  }
+  .Question-main .Question-mainColumn {
+    display: block;
+    width: 960px;
+    max-width: 100%;
+    float: none;
+    box-sizing: border-box;
+  }
+  .Question-main .Question-sideColumn {
+    display: none !important;
+  }
+
+  .QuestionRichText--expandable.QuestionRichText--collapsed {
+    max-height: none !important;
+    overflow: auto !important;
+  }
+  .QuestionRichText--expandable.QuestionRichText--collapsed .QuestionRichText-more {
+    display: none !important;
   }
 }
 

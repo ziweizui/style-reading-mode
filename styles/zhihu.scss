@@ -1,0 +1,40 @@
+@import "common";
+
+@-moz-document url-prefix("https://www.zhihu.com/question/") {
+    .AdblockBanner {
+        display: none;
+    }
+    header[role='banner'] {
+        display: none;
+    }
+    .QuestionHeader {
+        .QuestionHeader-footer {
+            display: none;
+        }
+    }
+    .QuestionHeader-content{
+        .QuestionHeader-tags,.QuestionHeader-side{
+            display: none;
+        }
+    }
+    .Question-main {
+        @include container;
+
+        .Question-mainColumn {
+            @include box-block;
+        }
+
+        .Question-sideColumn {
+            display: none !important;
+        }
+
+    }
+    //问题自动展开
+    .QuestionRichText--expandable.QuestionRichText--collapsed {
+        max-height: none !important;
+        overflow: auto !important;
+        .QuestionRichText-more{
+            display: none !important;
+        }
+    }
+}
