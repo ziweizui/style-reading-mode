@@ -158,5 +158,36 @@
     display: none !important;
   }
 }
+@-moz-document url-prefix("https://www.cnblogs.com/") {
+  #header, #footer {
+    display: none;
+  }
+
+  #leftmenu {
+    display: none;
+  }
+
+  #main_content {
+    display: flex;
+    justify-content: center;
+  }
+  #main_content > div {
+    display: flex;
+  }
+  #main_content #content {
+    display: block;
+    width: 960px;
+    max-width: 100%;
+    float: none;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  #main_content #content #comment_form {
+    display: none;
+  }
+  #main_content #green_channel {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=index.css.map */
