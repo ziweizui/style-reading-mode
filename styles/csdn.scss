@@ -27,6 +27,11 @@
             > .recommend-box{
                 display: none;
             }
+
+            // 屏蔽底部小广告条
+            div.t0{
+                display: none;
+            }
         }
         // 右边推荐
         > .recommend-right{

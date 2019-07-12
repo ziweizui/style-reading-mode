@@ -41,6 +41,9 @@
   #mainBox > main > .recommend-box {
     display: none;
   }
+  #mainBox > main div.t0 {
+    display: none;
+  }
   #mainBox > .recommend-right {
     display: none;
   }
