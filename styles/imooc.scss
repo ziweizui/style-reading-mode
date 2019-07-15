@@ -1,0 +1,26 @@
+@import "common";
+
+@-moz-document url-prefix("https://www.imooc.com/article/") {
+    body > div {
+        display: none;
+    }
+    #main {
+        display: block;
+        .main_con {
+            @include container;
+            .left_essay{
+                @include box-block;
+                .article_wrap,.praise-box{
+                    display: none;
+                }
+            }
+        }
+    }
+    .long-content{
+        max-width: none !important;
+    }
+    .showMore{
+        display: none !important;
+    }
+
+}

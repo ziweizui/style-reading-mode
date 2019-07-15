@@ -1,0 +1,36 @@
+@import "common";
+
+@-moz-document url-prefix("https://www.infoq.cn/article/") {
+    #layout {
+        .layout-header {
+            display: none;
+        }
+
+        .inner-content {
+            padding-top: 0;
+            > div:last-of-type {
+                display: none;
+            }
+
+            .topic-nav {
+                display: none;
+            }
+
+            .article-fixed-operation {
+                display: none;
+            }
+
+            .layout-content {
+                @include container;
+
+                .main-content {
+                    @include box-block;
+                    .like-section,.operation-btn-wrapper,.com-topic-tag,.article-advertising{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+}

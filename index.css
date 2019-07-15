@@ -17,7 +17,7 @@
     justify-content: center;
   }
   #mainBox > div {
-    display: flex;
+    display: none;
   }
   #mainBox > aside {
     display: none;
@@ -65,7 +65,7 @@
     justify-content: center;
   }
   #content > div {
-    display: flex;
+    display: none;
   }
   #content #local, #content > .blog-sidebar {
     display: none;
@@ -105,7 +105,7 @@
     justify-content: center;
   }
   .note > div {
-    display: flex;
+    display: none;
   }
   .note > .post {
     display: block;
@@ -140,7 +140,7 @@
     justify-content: center;
   }
   .Question-main > div {
-    display: flex;
+    display: none;
   }
   .Question-main .Question-mainColumn {
     display: block;
@@ -175,7 +175,7 @@
     justify-content: center;
   }
   #main_content > div {
-    display: flex;
+    display: none;
   }
   #main_content #content {
     display: block;
@@ -185,11 +185,133 @@
     box-sizing: border-box;
     margin: 0;
   }
-  #main_content #content #comment_form {
+
+  #navigator {
     display: none;
   }
-  #main_content #green_channel {
+
+  #main {
+    display: flex;
+    justify-content: center;
+  }
+  #main > div {
     display: none;
+  }
+  #main #mainContent {
+    display: block;
+    width: 960px;
+    max-width: 100%;
+    float: none;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  #main #mainContent .forFlow {
+    margin: 0;
+  }
+
+  #comment_form {
+    display: none;
+  }
+
+  #green_channel {
+    display: none;
+  }
+}
+@-moz-document url-prefix("https://www.infoq.cn/article/") {
+  #layout .layout-header {
+    display: none;
+  }
+  #layout .inner-content {
+    padding-top: 0;
+  }
+  #layout .inner-content > div:last-of-type {
+    display: none;
+  }
+  #layout .inner-content .topic-nav {
+    display: none;
+  }
+  #layout .inner-content .article-fixed-operation {
+    display: none;
+  }
+  #layout .inner-content .layout-content {
+    display: flex;
+    justify-content: center;
+  }
+  #layout .inner-content .layout-content > div {
+    display: none;
+  }
+  #layout .inner-content .layout-content .main-content {
+    display: block;
+    width: 960px;
+    max-width: 100%;
+    float: none;
+    box-sizing: border-box;
+  }
+  #layout .inner-content .layout-content .main-content .like-section, #layout .inner-content .layout-content .main-content .operation-btn-wrapper, #layout .inner-content .layout-content .main-content .com-topic-tag, #layout .inner-content .layout-content .main-content .article-advertising {
+    display: none;
+  }
+}
+@-moz-document url-prefix("https://sspai.com/post/") {
+  #header, #footer {
+    display: none;
+  }
+
+  #app .article-wrapper > div {
+    display: none;
+  }
+  #app .article-wrapper .article-detail {
+    display: flex;
+    justify-content: center;
+  }
+  #app .article-wrapper .article-detail > div {
+    display: none;
+  }
+  #app .article-wrapper .article-detail > article {
+    display: block;
+    width: 960px;
+    max-width: 100%;
+    float: none;
+    box-sizing: border-box;
+  }
+  #app .article-wrapper .article-detail > article .clock {
+    max-width: none;
+  }
+  #app .article-wrapper .article-detail > article .recommend {
+    display: none;
+  }
+}
+@-moz-document url-prefix("https://www.imooc.com/article/") {
+  body > div {
+    display: none;
+  }
+
+  #main {
+    display: block;
+  }
+  #main .main_con {
+    display: flex;
+    justify-content: center;
+  }
+  #main .main_con > div {
+    display: none;
+  }
+  #main .main_con .left_essay {
+    display: block;
+    width: 960px;
+    max-width: 100%;
+    float: none;
+    box-sizing: border-box;
+  }
+  #main .main_con .left_essay .article_wrap, #main .main_con .left_essay .praise-box {
+    display: none;
+  }
+
+  .long-content {
+    max-width: none !important;
+  }
+
+  .showMore {
+    display: none !important;
   }
 }
 

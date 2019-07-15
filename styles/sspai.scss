@@ -1,0 +1,30 @@
+@import "common";
+
+@-moz-document url-prefix("https://sspai.com/post/") {
+    #header, #footer {
+        display: none;
+    }
+    #app {
+        .article-wrapper {
+            > div {
+                display: none;
+            }
+
+            .article-detail {
+                @include container;
+
+                > article {
+                    @include box-block;
+
+                    .clock {
+                        max-width: none;
+                    }
+
+                    .recommend {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

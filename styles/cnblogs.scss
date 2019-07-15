@@ -13,16 +13,33 @@
         #content {
             @include box-block;
             margin: 0;
+        }
 
-            #comment_form {
-                display: none;
+    }
+    // 导航条都不能忍
+    #navigator {
+        display: none;
+    }
+    // 貌似每套主题有不同的排版
+    #main {
+        @include container;
+
+        #mainContent {
+            @include box-block;
+            margin: 0;
+
+            .forFlow {
+                margin: 0;
             }
         }
-
-        //取消文章下面的分享菜单
-        #green_channel {
-            display: none;
-        }
+    }
+    // 取消相关博客和推荐内容
+    #comment_form {
+        display: none;
+    }
+    //取消文章下面的分享菜单
+    #green_channel {
+        display: none;
     }
 
 }
