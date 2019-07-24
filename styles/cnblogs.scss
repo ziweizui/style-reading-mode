@@ -23,8 +23,8 @@
     // 貌似每套主题有不同的排版
     #main {
         @include container;
-
-        #mainContent {
+        background: transparent;
+        #post_detail, #mainContent, > div:first-of-type {
             @include box-block;
             margin: 0;
 

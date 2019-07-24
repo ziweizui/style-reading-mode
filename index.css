@@ -193,11 +193,12 @@
   #main {
     display: flex;
     justify-content: center;
+    background: transparent;
   }
   #main > div {
     display: none;
   }
-  #main #mainContent {
+  #main #post_detail, #main #mainContent, #main > div:first-of-type {
     display: block;
     width: 960px;
     max-width: 100%;
@@ -205,7 +206,7 @@
     box-sizing: border-box;
     margin: 0;
   }
-  #main #mainContent .forFlow {
+  #main #post_detail .forFlow, #main #mainContent .forFlow, #main > div:first-of-type .forFlow {
     margin: 0;
   }
 
