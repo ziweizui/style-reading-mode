@@ -315,5 +315,18 @@
     display: none !important;
   }
 }
+@-moz-document url-prefix("https://my.oschina.net/") {
+  #headerNavMenu, #footer, #copyright, #floatMenu {
+    display: none;
+  }
+
+  .float-menu-content > .author-card, .float-menu-content > .action, .float-menu-content > .breadcrumb, .float-menu-content > .around-articles-wrap {
+    display: none;
+  }
+
+  .article-list {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=index.css.map */

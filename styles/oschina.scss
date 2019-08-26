@@ -1,0 +1,16 @@
+@import "common";
+
+@-moz-document url-prefix("https://my.oschina.net/") {
+    #headerNavMenu, #footer, #copyright,#floatMenu {
+        display: none;
+    }
+    .float-menu-content {
+        > .author-card, > .action, > .breadcrumb, > .around-articles-wrap {
+            display: none;
+        }
+    }
+    .article-list {
+        display: none;
+    }
+
+}
