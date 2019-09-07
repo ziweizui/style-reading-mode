@@ -1,5 +1,42 @@
+@import "common";
+
 @-moz-document url-prefix("https://juejin.im/post/") {
-    .activity-recommend,.main-header-box,.sidebar,.recommended-area,.article-suspended-panel{
-        display:none !important;
+    .global-component-box{
+        display: none;
+        overflow: hidden;
     }
+    .activity-recommend, .main-header-box, .sidebar, .recommended-area, .article-suspended-panel {
+        display: none !important;
+    }
+    .main-container > div:first-of-type {
+        @include container;
+
+        > div:first-of-type {
+            @include box-block;
+        }
+    }
+}
+
+@-moz-document url-prefix("https://juejin.im/entry/") {
+    .main-header-box, .global-component-box {
+        display: none;
+        overflow: hidden;
+    }
+    .main-container {
+        > div {
+            display: none;
+        }
+
+        > div:first-of-type {
+            display: initial;
+        }
+    }
+    .entry-public-view {
+        @include container;
+
+        > div:first-of-type {
+            @include box-block;
+        }
+    }
+
 }

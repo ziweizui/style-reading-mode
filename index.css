@@ -1,6 +1,58 @@
 @-moz-document url-prefix("https://juejin.im/post/") {
+  .global-component-box {
+    display: none;
+    overflow: hidden;
+  }
+
   .activity-recommend, .main-header-box, .sidebar, .recommended-area, .article-suspended-panel {
     display: none !important;
+  }
+
+  .main-container > div:first-of-type {
+    display: flex;
+    justify-content: center;
+  }
+  .main-container > div:first-of-type > div {
+    display: none;
+  }
+  .main-container > div:first-of-type > div:first-of-type {
+    display: block;
+    width: 960px;
+    max-width: 100% !important;
+    float: none;
+    box-sizing: border-box;
+    margin: 0;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+}
+@-moz-document url-prefix("https://juejin.im/entry/") {
+  .main-header-box, .global-component-box {
+    display: none;
+    overflow: hidden;
+  }
+
+  .main-container > div {
+    display: none;
+  }
+  .main-container > div:first-of-type {
+    display: initial;
+  }
+
+  .entry-public-view {
+    display: flex;
+    justify-content: center;
+  }
+  .entry-public-view > div {
+    display: none;
+  }
+  .entry-public-view > div:first-of-type {
+    display: block;
+    width: 960px;
+    max-width: 100% !important;
+    float: none;
+    box-sizing: border-box;
+    margin: 0;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   }
 }
 @-moz-document url-prefix("https://blog.csdn.net/") {
@@ -34,9 +86,11 @@
   #mainBox > main {
     display: block;
     width: 960px;
-    max-width: 100%;
+    max-width: 100% !important;
     float: none;
     box-sizing: border-box;
+    margin: 0;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   }
   #mainBox > main > .recommend-box {
     display: none;
@@ -73,9 +127,11 @@
   #content #main {
     display: block;
     width: 960px;
-    max-width: 100%;
+    max-width: 100% !important;
     float: none;
     box-sizing: border-box;
+    margin: 0;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   }
   #content #main > div.blog_main > div.blog_comment {
     display: none;
@@ -110,9 +166,11 @@
   .note > .post {
     display: block;
     width: 960px;
-    max-width: 100%;
+    max-width: 100% !important;
     float: none;
     box-sizing: border-box;
+    margin: 0;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   }
   .note > .post .meta-bottom, .note > .post .follow-detail {
     display: none;
@@ -145,9 +203,11 @@
   .Question-main .Question-mainColumn {
     display: block;
     width: 960px;
-    max-width: 100%;
+    max-width: 100% !important;
     float: none;
     box-sizing: border-box;
+    margin: 0;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   }
   .Question-main .Question-sideColumn {
     display: none !important;
@@ -180,9 +240,11 @@
   #main_content #content {
     display: block;
     width: 960px;
-    max-width: 100%;
+    max-width: 100% !important;
     float: none;
     box-sizing: border-box;
+    margin: 0;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     margin: 0;
   }
 
@@ -201,9 +263,11 @@
   #main #post_detail, #main #mainContent, #main > div:first-of-type {
     display: block;
     width: 960px;
-    max-width: 100%;
+    max-width: 100% !important;
     float: none;
     box-sizing: border-box;
+    margin: 0;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     margin: 0;
   }
   #main #post_detail .forFlow, #main #mainContent .forFlow, #main > div:first-of-type .forFlow {
@@ -244,9 +308,11 @@
   #layout .inner-content .layout-content .main-content {
     display: block;
     width: 960px;
-    max-width: 100%;
+    max-width: 100% !important;
     float: none;
     box-sizing: border-box;
+    margin: 0;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   }
   #layout .inner-content .layout-content .main-content .like-section, #layout .inner-content .layout-content .main-content .operation-btn-wrapper, #layout .inner-content .layout-content .main-content .com-topic-tag, #layout .inner-content .layout-content .main-content .article-advertising {
     display: none;
@@ -270,9 +336,11 @@
   #app .article-wrapper .article-detail > article {
     display: block;
     width: 960px;
-    max-width: 100%;
+    max-width: 100% !important;
     float: none;
     box-sizing: border-box;
+    margin: 0;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   }
   #app .article-wrapper .article-detail > article .clock {
     max-width: none;
@@ -299,9 +367,11 @@
   #main .main_con .left_essay {
     display: block;
     width: 960px;
-    max-width: 100%;
+    max-width: 100% !important;
     float: none;
     box-sizing: border-box;
+    margin: 0;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   }
   #main .main_con .left_essay .article_wrap, #main .main_con .left_essay .praise-box {
     display: none;
