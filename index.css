@@ -185,40 +185,11 @@
     display: none;
   }
 
-  .QuestionHeader .QuestionHeader-footer {
+  main[role=main] .Question-main > .Question-sideColumn {
     display: none;
   }
-
-  .QuestionHeader-content .QuestionHeader-tags, .QuestionHeader-content .QuestionHeader-side {
-    display: none;
-  }
-
-  .Question-main {
-    display: flex;
-    justify-content: center;
-  }
-  .Question-main > div {
-    display: none;
-  }
-  .Question-main .Question-mainColumn {
-    display: block;
-    width: 960px;
-    max-width: 100% !important;
-    float: none;
-    box-sizing: border-box;
-    margin: 0;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  }
-  .Question-main .Question-sideColumn {
-    display: none !important;
-  }
-
-  .QuestionRichText--expandable.QuestionRichText--collapsed {
-    max-height: none !important;
-    overflow: auto !important;
-  }
-  .QuestionRichText--expandable.QuestionRichText--collapsed .QuestionRichText-more {
-    display: none !important;
+  main[role=main] .Question-main .Question-mainColumn {
+    width: auto;
   }
 }
 @-moz-document url-prefix("https://www.cnblogs.com/") {

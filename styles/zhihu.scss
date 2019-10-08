@@ -7,34 +7,15 @@
     header[role='banner'] {
         display: none;
     }
-    .QuestionHeader {
-        .QuestionHeader-footer {
-            display: none;
-        }
-    }
-    .QuestionHeader-content{
-        .QuestionHeader-tags,.QuestionHeader-side{
-            display: none;
-        }
-    }
-    .Question-main {
-        @include container;
+    main[role='main']{
 
-        .Question-mainColumn {
-            @include box-block;
-        }
-
-        .Question-sideColumn {
-            display: none !important;
-        }
-
-    }
-    //问题自动展开
-    .QuestionRichText--expandable.QuestionRichText--collapsed {
-        max-height: none !important;
-        overflow: auto !important;
-        .QuestionRichText-more{
-            display: none !important;
+        .Question-main{
+            >.Question-sideColumn{
+                display: none;
+            }
+            .Question-mainColumn{
+                width: auto;
+            }
         }
     }
 }
