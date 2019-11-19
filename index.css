@@ -64,26 +64,34 @@
     display: none;
   }
 
-  #mainBox {
+  .tool-box, .csdn-side-toolbar, .reward-user-box {
+    display: none !important;
+  }
+
+  .main_father > .recommend-right {
+    display: none !important;
+  }
+
+  .main_father > #mainBox {
     display: flex;
     justify-content: center;
   }
-  #mainBox > div {
+  .main_father > #mainBox > div {
     display: none;
   }
-  #mainBox > aside {
+  .main_father > #mainBox > aside {
     display: none;
   }
-  #mainBox #article_content {
+  .main_father > #mainBox #article_content {
     height: auto !important;
   }
-  #mainBox #article_content .article-copyright {
+  .main_father > #mainBox #article_content .article-copyright {
     display: none;
   }
-  #mainBox .hide-article-box {
+  .main_father > #mainBox .hide-article-box {
     display: none;
   }
-  #mainBox > main {
+  .main_father > #mainBox > main {
     display: block;
     width: 960px;
     max-width: 100% !important;
@@ -92,21 +100,11 @@
     margin: 0;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   }
-  #mainBox > main > .recommend-box {
+  .main_father > #mainBox > main > .recommend-box {
     display: none;
   }
-  #mainBox > main div.t0 {
+  .main_father > #mainBox > main div.t0 {
     display: none;
-  }
-  #mainBox > .recommend-right {
-    display: none;
-  }
-  #mainBox .recommend-item-box, #mainBox .recommend-loading-box {
-    display: none;
-  }
-
-  .tool-box, .csdn-side-toolbar {
-    display: none !important;
   }
 }
 @-moz-document regexp("https://[\\w-]+\\.iteye\\.com/blog/.*") {
@@ -145,34 +143,17 @@
   }
 }
 @-moz-document url-prefix("https://www.jianshu.com/p/") {
-  body > nav {
+  #__next > header:first-of-type {
     display: none;
   }
-  body .note-bottom {
+  #__next > footer:first-of-type {
     display: none;
   }
 
-  #note-fixed-ad-container, #web-note-ad-1 {
-    display: none !important;
-  }
-
-  .note {
-    display: flex;
-    justify-content: center;
-  }
-  .note > div {
+  div[role=main] > div:first-of-type > section:last-of-type {
     display: none;
   }
-  .note > .post {
-    display: block;
-    width: 960px;
-    max-width: 100% !important;
-    float: none;
-    box-sizing: border-box;
-    margin: 0;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  }
-  .note > .post .meta-bottom, .note > .post .follow-detail {
+  div[role=main] > aside:first-of-type {
     display: none;
   }
 }
