@@ -1,6 +1,6 @@
 @import "common";
 
-@-moz-document url-prefix("https://www.cnblogs.com/") {
+@-moz-document regexp("https://www\.cnblogs\.com/\w+/p/\d+.html") {
     #header, #footer {
         display: none;
     }

@@ -106,6 +106,13 @@
   .main_father > #mainBox > main div.t0 {
     display: none;
   }
+  .main_father > #mainBox > main .more-toolbox {
+    display: none;
+  }
+
+  #passportbox, .login-mark {
+    display: none !important;
+  }
 }
 @-moz-document regexp("https://[\\w-]+\\.iteye\\.com/blog/.*") {
   #csdn-toolbar, #header {
@@ -173,7 +180,7 @@
     width: auto;
   }
 }
-@-moz-document url-prefix("https://www.cnblogs.com/") {
+@-moz-document regexp("https://www.cnblogs.com/w+/p/\a+.html") {
   #header, #footer {
     display: none;
   }
