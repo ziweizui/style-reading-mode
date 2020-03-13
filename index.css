@@ -114,6 +114,35 @@
     display: none !important;
   }
 }
+@-moz-document url-prefix("https://bbs.csdn.net/topics/") {
+  body > div {
+    display: none;
+  }
+
+  body > div.container-box {
+    display: block;
+  }
+  body > div.container-box #left-box {
+    float: none !important;
+    margin: 0 auto;
+  }
+  body > div.container-box #left-box > .mod_topic_wrap {
+    display: none;
+  }
+  body > div.container-box #rightList {
+    display: none;
+  }
+
+  #bbs_detail_wrap {
+    max-height: none !important;
+  }
+  #bbs_detail_wrap .hide_topic_box {
+    display: none;
+  }
+  #bbs_detail_wrap #bbs_title_bar > .mod_fun_wrap {
+    display: none;
+  }
+}
 @-moz-document regexp("https://[\\w-]+\\.iteye\\.com/blog/.*") {
   #csdn-toolbar, #header {
     display: none;

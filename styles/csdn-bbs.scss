@@ -1,0 +1,42 @@
+@import "common";
+
+@-moz-document url-prefix("https://bbs.csdn.net/topics/") {
+    body > div {
+        display: none;
+    }
+    body > div.container-box {
+        display: block;
+        // 左侧内容区
+        #left-box {
+            // 内容居中
+            float: none !important;
+            margin: 0 auto;
+
+            // 隐藏 "相关推荐feed"
+            > .mod_topic_wrap {
+                display: none;
+            }
+
+        }
+
+        // 右侧内容直接隐藏
+        #rightList {
+            display: none;
+        }
+    }
+
+    // 页面主要内容容器
+    #bbs_detail_wrap {
+        // 禁止隐藏内容
+        max-height: none !important;
+
+        // 隐藏 "查看更多按钮"
+        .hide_topic_box {
+            display: none;
+        }
+        // 隐藏 标题 下面的 "一键查看最优答案" 按钮
+        #bbs_title_bar>.mod_fun_wrap{
+            display: none;
+        }
+    }
+}
